@@ -5,17 +5,19 @@
 
 {% block subtitulo %}
 
-Bienvenidos!
+{{mensaje}}
                     
 {% endblock %}
 
 {% block titulo %}
 
-Esta es mi primera página web
+Bienvenidos a mi blog de cursos
                     
 {% endblock %}
 
 {% block descripcion %}
+
+{% if request.user.is_authenticated %}
 
 PUEDES BUSCAR LA CAMADA DEL CURSO
 
@@ -39,7 +41,7 @@ PUEDES BUSCAR LA CAMADA DEL CURSO
 <p>Nombre: {{curso.nombre}}---- Camada:{{curso.camada}}</p>
 
 {% endfor %}
-
+{% endif %}
 {% endblock %}
 
 {% block titulo2 %}

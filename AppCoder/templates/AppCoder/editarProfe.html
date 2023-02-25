@@ -5,25 +5,22 @@
 
 {% block subtitulo %}
 
-Bienvenidos estudiantes!
+En esta sección podemos editar a los profesores.
                     
 {% endblock %}
 
-
 {% block titulo %}
 
-Esta página mostrará los estudiantes
+
                     
 {% endblock %}
 
 {% block descripcion %}
 
-Formulario - Agregar Estudiantes
-
 <form action="" method="POST"> {% csrf_token %}
     <table>
 
-        {{form2.as_table}}
+        {{form3.as_table}}
 
     </table>
 
@@ -32,8 +29,8 @@ Formulario - Agregar Estudiantes
 
 {% endblock %}
 
-{% block titulo2 %}
+    
 
-Hay muchos estudiantes
 
-{% endblock %}
+
+

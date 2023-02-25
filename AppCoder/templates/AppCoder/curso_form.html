@@ -1,0 +1,32 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+{% block subtitulo %}
+
+En esta sección podemos añadir cursos
+                    
+{% endblock %}
+
+{% block titulo %}
+
+
+                    
+{% endblock %}
+
+{% block descripcion %}
+
+
+<form action ="" method="POST"> {% csrf_token %}
+
+    {{form.as_p}}
+
+    <input type ="submit" value = "Enviar">
+
+
+</form>
+
+
+{% endblock %}
+    

@@ -1,0 +1,28 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+{% block titulo %}
+
+<h1>Listado de Entregables</h1>
+                    
+{% endblock %}
+
+{% block titulo2 %}
+<a href="{% url 'EntregablesCrear' %}"> Crear Entregable </a>
+<br>
+
+
+{% for entregable in deliverables %}
+
+<p>Nombre: {{entregable.nombre}}</p>
+<p>FechaEntrega: {{entregable.fechaEntrega}}</p>
+
+
+
+<a href="{% url 'EntregablesEditar' entregable.nombre %}"> Editar</a>
+<a href="{% url 'EntregablesEliminar' entregable.nombre %}"> Eliminar </a>
+
+
+{% endfor %}
+{% endblock %}

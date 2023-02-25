@@ -1,0 +1,38 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+{% block subtitulo %}
+
+                   
+{% endblock %}
+
+{% block titulo %}
+
+<p>Acá agregamos imágenes</p>
+
+{% endblock %}
+
+{% block descripcion %}
+
+{% endblock %}
+
+
+{% block titulo2 %}
+
+Esta pagina la he realizado utilizando Django
+
+{% endblock %}
+
+<form action="" method="POST" enctype="multipart/form-data"> {% csrf_token %}
+
+    <p>
+
+        {{form.as_p}}
+
+    </p>
+
+    <input type = "submit" value ="Subir imagen">
+
+</form>

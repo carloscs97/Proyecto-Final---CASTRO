@@ -1,0 +1,29 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+{% block titulo %}
+
+<h1>Listado de Profesores</h1>
+                    
+{% endblock %}
+
+{% block titulo2 %}
+<a href="{% url 'ProfesoresCrear' %}"> Crear Profesor </a>
+<br>
+
+
+{% for profe in teachers %}
+
+<p>Nombre: {{profe.nombre}}</p>
+<p>Apellido: {{profe.apellido}}</p>
+<p>Email: {{profe.email}}</p>
+<p>Profesion: {{profe.profesion}}</p>
+
+
+<a href="{% url 'ProfesoresEditar' profe.nombre %}"> Editar Profesor </a>
+<a href="{% url 'ProfesoresEliminar' profe.nombre %}"> Eliminar Profesor </a>
+
+
+{% endfor %}
+{% endblock %}

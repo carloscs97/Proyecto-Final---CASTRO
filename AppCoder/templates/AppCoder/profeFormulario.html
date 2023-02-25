@@ -1,0 +1,29 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+{% block subtitulo %}
+
+En esta sección puedes añadir Profesores
+                    
+{% endblock %}
+
+{% block titulo %}
+
+
+                    
+{% endblock %}
+
+{% block descripcion %}
+
+<form action="" method="POST"> {% csrf_token %}
+    <table>
+
+        {{miFormulario.as_table}}
+
+    </table>
+
+    <input type = "submit" value ="Enviar">
+
+{% endblock %}

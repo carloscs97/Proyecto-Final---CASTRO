@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+{% block titulo %}
+
+<h1>Listado de Cursos</h1>
+                    
+{% endblock %}
+
+{% block titulo2 %}
+<a href="{% url 'CursosCrear' %}"> Crear Curso </a>
+<br>
+
+{% for curso in object_list %}
+
+<p>Nombre: {{curso.nombre}}</p>
+<p>Camada: {{curso.camada}}</p>
+
+<a href="{% url 'CursosEditar' curso.id %}"> Editar Curso </a>
+<a href="{% url 'CursosBorrar' curso.id %}"> Eliminar Curso </a>
+
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+{% block subtitulo %}
+
+Bienvenidos!
+                    
+{% endblock %}
+
+{% block titulo %}
+
+Acá podemos iniciar sesión
+                    
+{% endblock %}
+
+{% block descripcion %}
+
+<form action ="" method="POST"> {% csrf_token%}
+
+    {{formulario.as_p}}
+
+    <button type= "submit"> Iniciar sesión</button>
+
+
+
+</form>
+
+{% endblock %}
+
+{% block titulo2 %}
+
+Esta pagina la he realizado utilizando Django
+
+{% endblock %}
