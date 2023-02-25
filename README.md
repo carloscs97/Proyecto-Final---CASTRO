@@ -16,3 +16,5 @@ Adicional hay una carpeta importante "Templates/AppCoder/": En esta se encuentra
 Hay un archivo padre.html que se creó en base al código de una plantilla y los diferentes archivos HTML (Curso.html, entregables.html, about.html, inicio.html, profesores.html) donde con una herencia se trae la información de padre.html y se modifican según los BLOCK en el archivo de padre.html
 
 En la carpeta "ProyectoCoder/" tenemos el archivo urls.html que utilizamos para agregar en la ruta del servidor un "AppCoder".
+
+En la carpeta "media/" la utilizamos para guardar las imagenes que se crean en el avatar de cada usuario.
