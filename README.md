@@ -1,5 +1,7 @@
 Bienvenidos a mi código!
 
+VIDEO EXPLICACIÓN: https://youtu.be/OugUZ8Egiz0
+
 Con este código he creado mi primera página web utilizando DJANGO para entrega del proyecto final del curso de PYTHON.
 
 Con el archivo manage.py lo utilizamos para correr el servidor local. Con el archivo db.sqlite3 se encuentran nuestras tablas con la información.
